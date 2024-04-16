@@ -13,24 +13,25 @@
                 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     </head>
     <body>
-            <div class = 'nav'>
+
+    <div class = 'nav'>
                 <nav class = 'menu'>
                     <image src = "{{url('/image/logo.png')}}" alt='logo' class="logo">
                     <div class = "center">
-                        <input type="text" id="search" placeholder = 'SEARCH'>
+                        <input type="text" id="search" placeholder="Search">
                         <div class = "centerDown">
                             <ul>
                                 <li class="menu-item">
                                     <a href="#" onclick="window.location.href='{{route('index')}}'">HOME</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">ABOUT US</a>
+                                    <a href="#"  onclick="window.location.href='{{route('about_us')}}'">ABOUT US</a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="#" onclick="window.location.href='{{route('clubs')}}'">CLUBS</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">CONTACT</a>
+                                    <a href="#" onclick="window.location.href='{{route('contact')}}'">CONTACT</a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="#">QUOTE</a>
@@ -38,7 +39,16 @@
                             </ul>
                         </div>
                     </div>
+                    <div class = 'rightSide'>
+                        <image style= "width: 90px; height: 90px; padding-right: 67px" src ="{{url('/image/acc.png')}}" alt="auth" id="authIcon">
+                            @auth
 
+                        <p>{{auth()->user()->email}} </p>
+                        @endauth
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal" id='showWindow'>
+                            Sign in
+                        </button>
+                    </div>
                 </nav>
             </div>
 

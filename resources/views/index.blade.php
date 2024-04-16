@@ -16,20 +16,20 @@
                 <nav class = 'menu'>
                     <image src = "{{url('/image/logoWhite.png')}}" alt='logo' class="logo">
                     <div class = "center">
-                        <input type="text" id="search" placeholder="SEARCH">
+                        <input type="text" id="search" placeholder="Search">
                         <div class = "centerDown">
                             <ul>
                                 <li class="menu-item">
                                     <a href="#">HOME</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">ABOUT US</a>
+                                    <a href="#"  onclick="window.location.href='{{route('about_us')}}'">ABOUT US</a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="#" onclick="window.location.href='{{route('clubs')}}'">CLUBS</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">CONTACT</a>
+                                    <a href="#" onclick="window.location.href='{{route('contact')}}'">CONTACT</a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="#">QUOTE</a>
@@ -38,7 +38,7 @@
                         </div>
                     </div>
                     <div class = 'rightSide'>
-                        <image src ="{{url('/image/Photo.png')}}" alt="auth" id="authIcon">
+                        <image style= "width: 90px; height: 90px; padding-right: 67px" src ="{{url('/image/acc.png')}}" alt="auth" id="authIcon">
                             @auth
 
                         <p>{{auth()->user()->email}} </p>
@@ -63,7 +63,7 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h3 class="modal-title" id="loginModalLabel">Sign in</h5>
+                            <h3 class="modal-title" id="loginModalLabel">Sign in</h3>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>

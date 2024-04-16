@@ -6,7 +6,7 @@
 
         <title>SDU Diary</title>
 
-        <link rel="stylesheet" href="{{asset('../css/contacts.css')}}">
+        <link rel="stylesheet" href="{{asset('../css/faculty.css')}}">
 
          <link rel="preconnect" href="https://fonts.googleapis.com">
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,23 +50,48 @@
                         </button>
                     </div>
                 </nav>
-
     </div>
-    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50035.770355568144!2d76.7076648522942!3d43.20876726248611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38834f7675d8a6c3%3A0x7b7d14aec270c056!2sSDU%20University!5e0!3m2!1sen!2skz!4v1713281082733!5m2!1sen!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <div class="contact-bottom">
-        <p class="contact-title">
-            Ask us a question
-        </p>
-        <!-- <div class="call-mail">
-            <image src = "{{url('/image/Ringer Volume.png')}}" alt='logo' class="call">
-            <p>+7 (727) 307-95-65</p>
-        </div> -->
-        <div class="call-mail">
-            <img  src="{{url('/image/Vector (1).png')}}" class="call" >
-            <img  src="{{url('/image/Почта.png')}}" alt="">
+
+    <div class="main">
+        <div class="card">
+            <p><a href="#" onclick="window.location.href='{{route('index')}}'">ABOUT SDU</a></p>
         </div>
-        <div class="follow">
-            <!-- <img  src="{{url('/image/VK.png')}}" class="call" > -->
+        <div class="card">
+            <p><a href="#" onclick="window.location.href='{{route('faculty')}}'">FACULTY</a></p>
+        </div>
+        <div class="card">
+            <p><a href="#" onclick="window.location.href='{{route('campus')}}'">CAMPUS</a></p>
+        </div>
+    </div>
+
+    <div class="fac-main">
+        <div class="fac-card">
+            <img class="name-fac" src="{{url('/image/image 17.png')}}" alt="">
+            <p>SDU Business School</p>
+            <div class="line">
+                <img class="navig" src="{{url('/image/navigation.png')}}" alt="">
+            </div>
+        </div>
+        <div class="fac-card">
+            <img class="name-fac" src="{{url('/image/image 18.png')}}" alt="">
+            <p>SDU Engineering and Natural</p>
+            <div class="line">
+                <img class="navig" src="{{url('/image/navigation.png')}}" alt="">
+            </div>
+        </div>
+        <div class="fac-card">
+            <img class="name-fac" src="{{url('/image/image 19.png')}}" alt="">
+            <p>SDU Edu & Humanities</p>
+            <div class="line">
+                <img class="navig" src="{{url('/image/navigation.png')}}" alt="">
+            </div>
+        </div>
+        <div class="fac-card">
+            <img class="name-fac" src="{{url('/image/image 20.png')}}" alt="">
+            <p>SDU Law & Social</p>
+            <div class="line">
+                <img class="navig" src="{{url('/image/navigation.png')}}" alt="">
+            </div>
         </div>
     </div>
 

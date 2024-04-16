@@ -1,6 +1,9 @@
 .logo{
-
+    width: 120px;
+    height: 110px;
     justify-content: left;
+    padding-left: 50px;
+    padding-top: 30px;
 }
 body{
     width:100%;
@@ -27,24 +30,30 @@ body{
 }
 
 .center {
-    width: 60%;
+    width: 50%;
+    margin-left: -100px;
     justify-content: center;
     position: relative;
-    top: 40px;
+    top: 45px;
 }
 .center input{
-    width: 70%;
-    height: 50px;
-    border-radius: 10px;
-    font-size: 28px;
+    width: 778px;
+    height: 68px;
+    border-radius: 20px;
+    font-size: 16px;
 }
+
+::placeholder {
+    padding-left: 30px;
+}
+
 
 .rightSide {
     display: flex;
-    justify-content: right;
-    margin-right: 40px;
-    margin-top: 20px;
+    margin-right: 80px;
+    margin-top: 23px;
 }
+
 
 .nav ul {
 
